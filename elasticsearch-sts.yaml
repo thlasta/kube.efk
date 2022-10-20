@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: elasticsearch
-          image: rpidockers/elasticsearch:latest
+          image: webhippie/elasticsearch
           resources:
             limits:
               cpu: 1000m
