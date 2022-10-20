@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elasticsearch-pv
+  namespace: logging
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.0.144
+    path: "/mnt/usb/volume/1/share/kubernetes/efk/elasticsearch"
+  mountOptions:
+    - nfsvers=4.2
