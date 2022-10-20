@@ -31,6 +31,7 @@ spec:
               protocol: TCP
           volumeMounts:
             - name: data
+              subPath: data
               mountPath: /usr/share/elasticsearch/data
           env:
             - name: cluster.name
