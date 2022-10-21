@@ -6,8 +6,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: ""
+  storageClassName: nfs-storageclass
   resources:
     requests:
       storage: 10Gi
-  volumeName: elasticsearch-pv
