@@ -55,7 +55,7 @@ spec:
           volumeMounts:
             - name: data
               mountPath: /usr/share/elasticsearch/data
-              subPath: /data
+              subPath: data
         - name: increase-vm-max-map
           image: busybox
           command: ["sysctl", "-w", "vm.max_map_count=262144"]
